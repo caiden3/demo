@@ -63,8 +63,9 @@ ssh-keygen   生成一对密钥   id_rsa 私钥   id_rsa.pub 公钥
 
 ~~~
 1、 git checkout 文件名      恢复某个已修改的文件（撤销未提交的修改）
-2、 git revert HEAD         还原最近一次提交的修改
-3、 git revert commit-id    还原指定版本的修改
+2、 git revert HEAD         还原最近一次提交的修改(撤销前一次的commit)
+3、 git revert HEAD^        撤销前前一次的commit
+4、 git revert commit-id    还原指定版本的修改
 ~~~
 
 **版本回退**
