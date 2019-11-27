@@ -59,7 +59,7 @@ ssh-keygen   生成一对密钥   id_rsa 私钥   id_rsa.pub 公钥
 4、 git remote –v       查看本地添加了哪些远程地址          
 ~~~
 
-**撤销修改**
+**撤销修改(慎用)**
 
 ~~~
 1、 git checkout 文件名      恢复某个已修改的文件（撤销未提交的修改）
@@ -68,7 +68,7 @@ ssh-keygen   生成一对密钥   id_rsa 私钥   id_rsa.pub 公钥
 4、 git revert commit-id    还原指定版本的修改
 ~~~
 
-**版本回退**
+**版本回退(慎用)**
 
 ~~~
 1、 git reset –hard HEAD^        回退到上一个版本(把你工作目录中所有未提交的内容清空)
@@ -93,6 +93,8 @@ HEAD 代表版本库
 5 git reflog        	查看历史记录的版本号id（记录你的每一次命令,不论是否提交）
 
 6 git log --pretty=oneline  如果信息量太多可以进行比较好的列表显示 
+
+7 git log --graph       查看树状结构
 ~~~
 
 **分支**
